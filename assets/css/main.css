@@ -1,4 +1,4 @@
-.header{
+.header {
 
   width: 100%;
   height: 80px;
@@ -9,62 +9,60 @@
   justify-content: start;
   align-items: center;
   z-index: 2;
-
 }
 
-.headerLogo{
+.headerLogo {
 
   width: 80px;
   max-width: 150px;
   height: auto;
   margin-left: 20px;
-  
 }
 
 .banner {
+
   display: flex;
   justify-content: flex-start;
   align-items: start;
-  position: relative; 
+  position: relative;
   overflow: hidden;
   margin-top: 120px;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
   gap: 10px;
-  flex-direction: column; 
+  flex-direction: column;
   z-index: 1;
   width: 100%;
   height: 700px;
-
-
 }
 
 .bannerCapa {
+
   position: absolute;
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   z-index: -1;
 }
 
 .bannerTitulo {
+
   font-size: 100px;
   color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Melhora a legibilidade sobre a imagem */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   margin: 0;
   padding: 30px;
 }
 
-.bannerTexto{
+.bannerTexto {
 
   font-size: 20px;
   color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Melhora a legibilidade sobre a imagem */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   text-align: justify;
   margin: 0;
   line-height: 1.6;
   width: 40%;
   margin-left: 80px;
-
 }
 
 .banner__botao {
@@ -75,16 +73,22 @@
   font-weight: 600;
   font-size: 20px;
   margin-top: 60px;
-  margin-left: 5%; 
+  margin-left: 5%;
   display: flex;
-  width: auto;
-  align-items: center;
-  justify-content: center;
   padding: 10px 30px;
+  transition: transform 0.8s ease;
+}
+
+.banner__botao:hover {
+
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
 
 .abas {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,18 +96,10 @@
   gap: 30px;
   padding: 20px;
   margin-top: 20px;
-  width: 100%;  /* Garante que a largura ocupe a tela inteira */
+  width: 100%;
 }
 
-.abas__sumario {
-
-  color: white;
-  justify-content: start;
-  padding: ;
-  
-  
-}
-.abas__img-grid{
+.abas__img-grid {
 
   width: 100%;
   height: 100%;
@@ -122,12 +118,36 @@
   object-fit: cover;
 }
 
-.abas__img-grid h2{
+.abas__img:hover {
+
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.abas__img-grid h2 {
 
   font-size: 20px;
-    color: white;
-    font-weight: 600;
-    display: flex;
-    margin-top: 10px;
-    text-align: center;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.grid__link {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid__link h2 {
+  
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
