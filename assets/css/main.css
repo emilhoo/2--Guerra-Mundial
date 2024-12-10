@@ -48,7 +48,7 @@
 
   font-size: 100px;
   color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 9px 9px 9px rgba(0, 0, 0, 0.7);
   margin: 0;
   padding: 30px;
 }
@@ -57,7 +57,7 @@
 
   font-size: 20px;
   color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 5px 8px rgba(0, 0, 0, 0.7);
   text-align: justify;
   margin: 0;
   line-height: 1.6;
@@ -116,6 +116,8 @@
   height: 500px;
   border-radius: 8px;
   object-fit: cover;
+  box-shadow: 9px 9px 11px #000000;
+  transition: all 0.4s ease;
 }
 
 .abas__img:hover {
@@ -150,4 +152,69 @@
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+}
+
+.container__LDT{
+
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  
+}
+
+.LDTTitulo{
+
+  font-size: 50px;
+  color: white;
+  padding-top: 50px;
+  text-shadow: 1px 1px 5px #fae058;
+}
+
+.linha{
+
+  width: 1200px;
+  height: 3px;
+  background-color: #fae058;
+  align-self: center;
+}
+
+.LDTSecao{
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 30px;
+  gap: 70px;
+}
+
+.LDTTexto__ano{
+
+  color: #fae058;
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 1px 1px 5px #fae058;
+}
+
+.LDTTexto__texto{
+
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0;
+  max-width: 500px;
+  
+}
+
+.LDTTexto__img{
+
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
