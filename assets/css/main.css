@@ -6,17 +6,68 @@
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   z-index: 2;
+  gap: 70%;
+  flex-wrap: wrap;
+}
+
+.headerEsquerda {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: fit-content;
+  gap: 15px;
 }
 
 .headerLogo {
 
+  width: 60px;
+  height: 60px;
+}
+
+.headerTitulo {
+
+  color: white;
+  font-size: 30px;
+  text-shadow: 9px 9px 9px rgba(0, 0, 0, 0.7);
+}
+
+.headerDireita {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: fit-content;
+  gap: 5px;
+}
+
+.headerLogin {
+
+  color: white;
+  background-color: #302f2f;
+  font-size: 20px;
+  height: 40px;
   width: 80px;
-  max-width: 150px;
-  height: auto;
-  margin-left: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.headerLogin:hover {
+
+  filter: brightness(0.7);
+}
+
+.headerLoginImg {
+  height: 40px;
+  width: 40px;
 }
 
 .banner {
@@ -86,7 +137,6 @@
   transition: 0.5s;
 }
 
-
 .abas {
 
   display: flex;
@@ -147,31 +197,31 @@
 }
 
 .grid__link h2 {
-  
+
   margin-top: 10px;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
 }
 
-.container__LDT{
+.container__LDT {
 
   width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 150px;
-  
+
 }
 
-.LDTTitulo{
+.LDTTitulo {
 
   font-size: 50px;
   color: white;
   text-shadow: 1px 1px 5px #fae058;
 }
 
-.linha{
+.linha {
 
   width: 1200px;
   height: 3px;
@@ -179,10 +229,9 @@
   align-self: center;
 }
 
-.LDTSecao{
+.LDTSecao {
 
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
@@ -191,7 +240,7 @@
   gap: 70px;
 }
 
-.LDTTexto__ano{
+.LDTTexto__ano {
 
   color: #fae058;
   font-size: 90px;
@@ -200,7 +249,7 @@
   text-shadow: 1px 1px 5px #fae058;
 }
 
-.LDTTexto__texto{
+.LDTTexto__texto {
 
   color: white;
   font-size: 18px;
@@ -208,10 +257,10 @@
   text-align: justify;
   margin: 0;
   max-width: 500px;
-  
+
 }
 
-.LDTTexto__img{
+.LDTTexto__img {
 
   width: 300px;
   height: auto;
